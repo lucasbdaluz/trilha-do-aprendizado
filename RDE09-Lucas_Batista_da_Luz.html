@@ -75,13 +75,22 @@
                 <source src="audio/Hey-Sailor-Letter-Box.wav" type="audio/wav">
             </audio>
 
+        <br>
+
         <h2>Tag Picture</h2>
             <p>Esta tag oferece mais flexibilidade na implementação de imagens em um documento, pois várias imagens podem ser agrupadas e projetadas para preencher melhor o navegador</p>
             <p><b>Sintaxe:</b></p>
-
+            <p>&lt;picture&gt;</p>
+            <p>&lt;source media="(max-width:500px)" srcset="img/bike_110.jpg"&gt;</p>
+            <p>&lt;source media="(max-width:700px)" srcset="img/bike_320.jpg"&gt;</p>
+            <p>&lt;source media="(max-width:1000px)" srcset="img/bike_320.jpg"&gt;</p>
+            <p>&lt;img src="img/bike_full.jpg" alt="Mtb Por-do-Sol"&gt;</p>
+            <p>&lt;/picture&gt;</p>
             <picture>
-                <source media="(max-widht:500px)" srcset="img/bike_110.jpg">
-                <img src="img/bike_full.jpg">
+                <source media="(max-width:500px)" srcset="img/bike_110.jpg">
+                <source media="(max-width:700px)" srcset="img/bike_320.jpg">
+                <source media="(max-width:1000px)" srcset="img/bike_320.jpg">
+                <img src="img/bike_full.jpg" alt="Mtb Por-do-Sol">
             </picture>
 
 </body>
