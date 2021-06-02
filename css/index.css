@@ -1,9 +1,8 @@
-.index-estilo {
+body {
     font-family: Arial, Helvetica, sans-serif;
-    background: url(fundo.jpeg) center;
-    background-size: 100% 100%;
     width: 80%;
     margin: 0 auto;
+    background: gainsboro;
 }
 
 header {
@@ -67,9 +66,9 @@ nav {
     padding-top: 20px;
     padding-bottom: 20px;
     align-items: center;
+    justify-content: center;
     border-radius: 20px;
     box-shadow: 10px 10px 10px #080808;
-    justify-content: center;
 }
 
 .conteudo:hover {
@@ -107,9 +106,32 @@ nav {
     text-align: center;
 }
 
+.index-estilo {
+    font-family: Arial, Helvetica, sans-serif;
+    background: url(fundo.jpeg) center;
+    background-size: 100% 100%;
+    width: 80%;
+    margin: 0 auto;
+}
+
 .rodape {
     color: darkgray;
     font-size: 10px;
     text-align: center;
     padding: 20px;
+}
+
+@media screen and (max-width: 800px){
+    header {
+        margin-bottom: 20px;
+    }
+    .principal {
+        flex-direction: column;
+        margin: 0px;
+        padding: 0px;
+    }
+    .conteudo {
+        width: 90%;
+        margin-bottom: 20px;
+    }
 }
