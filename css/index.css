@@ -1,12 +1,12 @@
 body {
     font-family: Arial, Helvetica, sans-serif;
-    background: url(img/fundo.jpeg);
+    background: url(fundo.jpeg) center;
+    background-size: 100% 100%;
     width: 80%;
     margin: 0 auto;
 }
 
 header {
-    display: flex;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     background-color: #586E73;
     opacity: 0.8;
@@ -14,40 +14,91 @@ header {
     margin-top: 10px;
 }
 
+.logo {
+    width: 60%;
+    margin: 0 auto;
+}
+
 .logo img {
-    width: 80%;
+    width: 100%;
     padding-top: 35px;
 }
 
+nav {
+    width: 420px;
+    margin: 0 auto;
+}
+
 .navegacao {
+    padding: 20px 0px;
     overflow: hidden;
+    display: flex;
+    text-align: center;
 }
 
 .navegacao a {
-    float: right;
+    width: 30%;
     display: block;
     color: rgb(173,173,173);
     text-decoration: none;
-    text-align: right;
-    padding: 10px 10px;
+    margin: 10px 20px;
+    padding: 10px;
 }
 
-.navegacao:hover {
-    color: #E32936;
-    background-color: black;
+.navegacao a:hover {
+    border-radius: 20px;
+    color: black;
+    background: darkolivegreen;
 }
 
 .principal {
+    display: flex;
     margin: 15px 2px 25px 2px;
-    background-color: gainsboro;
-    text-align: justify;
     padding: 10px;
-    border-radius: 5px;
+   
+}
+
+.conteudo {
+    background-color: gainsboro;
+    display: flex;
+    text-align: center;
+    width: 30%;
+    margin-left: 25px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    align-items: center;
+    border-radius: 20px;
+    box-shadow: 10px 10px 10px #080808;
+    justify-content: center;
+}
+
+.conteudo:hover {
+    background-color: darkolivegreen;
+    color: black;
+}
+
+.conteudo a {
+    text-decoration: none;
+    color: darkslateblue;
+}
+
+.projeto {
+    background-color: gainsboro;
+    text-align: center;
+    width: 100%;
+    height: 250px;
+    margin-left: 25px;
+    line-height: 2rem;
+    padding: 20px 80px;
+    border-radius: 20px;
     box-shadow: 10px 10px 10px #080808;
 }
 
-.principal h2{
-    color: #2e4159;
+.curriculo {
+    background-color: gainsboro;
+    border-radius: 20px;
+    margin: 15px 2px 25px 2px;
+    padding: 10px;
 }
 
 .rodape {
