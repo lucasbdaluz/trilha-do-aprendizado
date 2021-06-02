@@ -4,54 +4,167 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="img/favicon.ico" type="image/x-icon">
-    <title>Desenvolvimento WEB</title>
+    <link rel="stylesheet" href="css/index.css">
+    <title>Na Trilha do Aprendizado</title>
 
-    <link rel="stylesheet" href="css/RDE12_estilo.css">
+    <style>
+        div{
+            background-color: purple;
+            margin: 10px;
+        }
+
+        span{
+            font-weight: bold;
+        }
+
+        h1#principal{
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            text-align: center;
+            color: rgb(83, 58, 109);
+            background-color: rgb(29, 9, 48);
+            border: 2px solid rgb(138, 46, 224);
+        }
+
+        div.agrupamento{
+            font-family: Arial, Helvetica, sans-serif;
+            color:rgb(39, 7, 70);
+            background-color: rgba(29, 9, 48, 0.616);
+            border: 2px solid gray;
+            margin: 20px;
+            padding: 10px;
+        }
+
+        .exemplo-1{
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: darkblue;
+            border: 1px solid cadetblue;
+            margin: 10px;
+            padding: 10px;
+            width: 80px;
+            height: 30px;
+        }
+
+        .exemplo-2{
+            font-family: 'Courier New', Courier, monospace;
+            background-color: rgb(208, 211, 8);
+            border: 1px solid orange;
+            margin: 10px;
+            padding: 10px;
+            width: 100px;
+            height: 50px;
+        }
+
+        .personalizado{
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: rgba(216, 197, 233, 0.616);
+            border: 2px solid gray;
+            margin: 10px;
+            padding: 10px;
+        }
+
+        .personalizado:hover{
+            color: rgb(29, 7, 70);
+            background-color: rgba(29, 9, 48, 0.616);
+            margin: 30px;
+            padding: 20px;
+        }
+
+        .pseudo > span{
+            display: none;
+        }
+
+        .pseudo:hover > span{
+            display: block;
+            background-color: gray;
+        }
+
+        h3::selection{
+            color: red;
+            background: yellow;
+        }
+
+        p::first-letter{
+            color: red;
+            font-size: xx-large;
+        }
+
+        .hover-link:hover{
+            color: yellow;
+        }
+
+        .active-link:active{
+            color: blue;
+        }
+
+        .visited-link:visited{
+            color: springgreen;
+        }
+    </style>
 
 </head>
 <body>
-    
-    <h1 id="principal">Elementos block-level, inline e Seletores Personalizados</h1>
+    <header>
+        <div class="logo">
+            <picture>
+                <img src="img/logo.png"  alt="logo">
+            </picture>
+         </div>
+         <nav>
+             <div class="navegacao"> 
+                    <a href="index.html">Voltar</a>
+                    <a href="projeto.html">Projeto</a>
+                    <a href="sobre.html">Sobre mim</a>
+             </div>
+         </nav>
+    </header>
+    <main >
+        <h1 id="principal">Elementos block-level, inline e Seletores Personalizados</h1>
 
-    <div class="agrupamento">
-        <h2>Agrupamento de elementos</h2>
-        Os elementos &ltdiv&gt e &ltspan&gt são usados para agrupar e estruturar um documento e são frequentemente usados em conjunto com os atributos class e id.
-    </div>
+        <div class="agrupamento">
+            <h2>Agrupamento de elementos</h2>
+            Os elementos &ltdiv&gt e &ltspan&gt são usados para agrupar e estruturar um documento e são frequentemente usados em conjunto com os atributos class e id.
+        </div>
 
-    <div class="agrupamento">
-        <h2>Elementos Block-level</h2>
-        O elemento &ltdiv&gt é um elemento block-level. Tem a função de agrupar elementos html, definindo blocos de contéudo sempre iniciando uma nova linha e ocupando toda a linha. 
-        Exemplo:
-        <div class="exemplo-1">Bloco 1</div>
-        <div class="exemplo-2">Bloco 2</div>
-    </div>
-    
-    <div class="agrupamento">
-        <h2>Elementos Inline</h2>
-        O elemento &ltspan&gt é um elemento inline. É um <span>elemento neutro</span> embutidos que marcam um bloco dentro de uma mesma linha ou parágrafo. Pode ser usado pelo CSS para estilização de partes específicas do conteúdo do documento HTML
-    </div>
-    
-    <div class="personalizado">
-        <h2>Seletores Personalizados</h2>
-        Possibilita personalizar tags do documento HTML para estilização. Temos os seletores do tipo classe e o seletor do tipo id
+        <div class="agrupamento">
+            <h2>Elementos Block-level</h2>
+            O elemento &ltdiv&gt é um elemento block-level. Tem a função de agrupar elementos html, definindo blocos de contéudo sempre iniciando uma nova linha e ocupando toda a linha. 
+            Exemplo:
+            <div class="exemplo-1">Bloco 1</div>
+            <div class="exemplo-2">Bloco 2</div>
+        </div>
+        
+        <div class="agrupamento">
+            <h2>Elementos Inline</h2>
+            O elemento &ltspan&gt é um elemento inline. É um <span>elemento neutro</span> embutidos que marcam um bloco dentro de uma mesma linha ou parágrafo. Pode ser usado pelo CSS para estilização de partes específicas do conteúdo do documento HTML
+        </div>
+        
+        <div class="personalizado">
+            <h2>Seletores Personalizados</h2>
+            Possibilita personalizar tags do documento HTML para estilização. Temos os seletores do tipo classe e o seletor do tipo id
 
-            <h3>Seletor do tipo id</h3>
-            O seletor de id usa o atributo id de um elemento HTML para selecionar um elemento específico. Cada id é única. O seletor de id é representado por “#”.
+                <h3>Seletor do tipo id</h3>
+                O seletor de id usa o atributo id de um elemento HTML para selecionar um elemento específico. Cada id é única. O seletor de id é representado por “#”.
 
-            <h3>Seletor do tipo classe</h3>
-            O seletor de classe seleciona elementos HTML com um atributo de classe específico.O seletor de classe é representado por um ponto, “.”, e tem como alvo elementos com um determinado valor para seu atributo class. Para casos em que haja necessidade de mais de um elemento com a mesma identificação usamos o atributo class.
+                <h3>Seletor do tipo classe</h3>
+                O seletor de classe seleciona elementos HTML com um atributo de classe específico.O seletor de classe é representado por um ponto, “.”, e tem como alvo elementos com um determinado valor para seu atributo class. Para casos em que haja necessidade de mais de um elemento com a mesma identificação usamos o atributo class.
 
-            <div class="pseudo">
-                <h3>Pseudo-Classes</h3>
-                Usada para definir um estado especial de um elemento. O seletor de classe é representado por dois pontos, “:”. Estão relacionados a um elemento ou uma classe.
-                <span><br>Exemplo: <br><a class="hover-link" href="https://www.w3schools.com/cssref/sel_hover.asp" target="_blank">Hover</a>
-                        <br><a class="active-link" href="https://www.w3schools.com/cssref/sel_active.asp" target="_blank" >Active</a>
-                        <br><a class="visited-link" href="" target="_blank">Visited</a></span>
-            </div>
+                <div class="pseudo">
+                    <h3>Pseudo-Classes</h3>
+                    Usada para definir um estado especial de um elemento. O seletor de classe é representado por dois pontos, “:”. Estão relacionados a um elemento ou uma classe.
+                    <span><br>Exemplo: <br><a class="hover-link" href="https://www.w3schools.com/cssref/sel_hover.asp" target="_blank">Hover</a>
+                            <br><a class="active-link" href="https://www.w3schools.com/cssref/sel_active.asp" target="_blank" >Active</a>
+                            <br><a class="visited-link" href="" target="_blank">Visited</a></span>
+                </div>
 
-            <h3>Pseudo-Elementos</h3>
-            <p>Usado para estilizar partes específicas de um elemento.O seletor de classe é representado por dois pontos seguido de dois pontos, “::”</p>
-    </div>
+                <h3>Pseudo-Elementos</h3>
+                <p>Usado para estilizar partes específicas de um elemento.O seletor de classe é representado por dois pontos seguido de dois pontos, “::”</p>
+        </div>
+    </main>
+    <footer>
+        <div class="rodape">
+          <p>© Todos os direitos reservados</p>
+        </div>
+    </footer>
     
 
 </body>

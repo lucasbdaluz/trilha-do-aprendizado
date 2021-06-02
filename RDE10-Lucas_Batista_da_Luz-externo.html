@@ -4,51 +4,98 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="img/favicon.ico" type="image/x-icon">
-    <title>Desenvolvimento WEB</title>
+    <link rel="stylesheet" href="css/index.css">
+    <title>Na Trilha do Aprendizado</title>
 
-    <link rel="stylesheet" href="css/style.css">
+    <style>
+        body {
+            background-color: lightblue;
+            font-family: 'Times New Roman', Times, serif;
+        }
+
+        h1 {
+            background-color: lightseagreen;
+            color: lightblue;
+            text-align: center;
+            font-size: 28px;
+        }
+
+        h2 {
+            color: darkcyan;
+        }
+
+        h4 {
+            color: darkolivegreen;
+        }
+
+        ul {
+            color: dimgray;
+        }
+    </style>
 
 </head>
 <body>
-    <h1>CSS - Cascading Style Sheets</h1>
-    <h2>Definição</h2>
-        <p><b>Cascading Style Sheets</b> - Folhas de Estilo em Cascata - tem por objetivo <b>realizar a estilização</b> de conteúdo de documentos HTML. Podem definir cores, fontes, espaçamento dentre outros.</p>
+    <header>
+        <div class="logo">
+            <picture>
+                <img src="img/logo.png"  alt="logo">
+            </picture>
+         </div>
+         <nav>
+             <div class="navegacao"> 
+                    <a href="index.html">Voltar</a>
+                    <a href="projeto.html">Projeto</a>
+                    <a href="sobre.html">Sobre mim</a>
+             </div>
+         </nav>
+    </header>
+    <main >
+        <h1>CSS - Cascading Style Sheets</h1>
+        <h2>Definição</h2>
+            <p><b>Cascading Style Sheets</b> - Folhas de Estilo em Cascata - tem por objetivo <b>realizar a estilização</b> de conteúdo de documentos HTML. Podem definir cores, fontes, espaçamento dentre outros.</p>
 
-        <h2>Componentes</h2>
-            <ul>
-                <li>Seletores - seleciona elementos HTML com base no nome do elemento ao qual o estilo será aplicado</li>
-                <li>Propriedades - o aspecto específico do elemento que você quer usar como estilo</li>
-                <li>Valores - a configuração aplicada ao atributo</li>
-            </ul>
+            <h2>Componentes</h2>
+                <ul>
+                    <li>Seletores - seleciona elementos HTML com base no nome do elemento ao qual o estilo será aplicado</li>
+                    <li>Propriedades - o aspecto específico do elemento que você quer usar como estilo</li>
+                    <li>Valores - a configuração aplicada ao atributo</li>
+                </ul>
 
-        <p><b>Sintaxe:</b></p>
-        <p>seletor {</p>
-            <p>propriedades: valor; /*comentário*/</p>
-            <p>propriedades-subpropriedades: valor;</p>
-        <p>}</p>
+            <p><b>Sintaxe:</b></p>
+            <p>seletor {</p>
+                <p>propriedades: valor; /*comentário*/</p>
+                <p>propriedades-subpropriedades: valor;</p>
+            <p>}</p>
 
-        <br>
-        <p><b>Exemplo:</b></p>
-        <p>p {</p>
-            <p>color: blue;</p>
-            <p>text-align: center;</p>
-        <p>}</p>
+            <br>
+            <p><b>Exemplo:</b></p>
+            <p>p {</p>
+                <p>color: blue;</p>
+                <p>text-align: center;</p>
+            <p>}</p>
 
-        <h2>Há três formas de utilizar o CSS</h2>
-            <h4>INLINE</h4>
-                <ul>   
-                    <li>Os códigos CSS são definidos <b>dentro de uma tag HTML</b></li>
-                    <li>Afetam somente a tag em que foi definida</li>
-            </ul>
-            <h4>INCORPORADO</h4>
-                <ul>   
-                    <li>Os códigos CSS são definidos no cabeçalho, <b>dentro da tag head</b></li>
-                    <li>Afetam somente o documento em que foi definido</li>
-            </ul>
-            <h4>EXTERNO</h4>
-                <ul>   
-                    <li>Os códigos CSS são definidos <b>em um arquivo externo</b></li>
-                    <li>Afetam todos os documentos que estão linkados ao CSS</li>
-            </ul>
+            <h2>Há três formas de utilizar o CSS</h2>
+                <h4>INLINE</h4>
+                    <ul>   
+                        <li>Os códigos CSS são definidos <b>dentro de uma tag HTML</b></li>
+                        <li>Afetam somente a tag em que foi definida</li>
+                </ul>
+                <h4>INCORPORADO</h4>
+                    <ul>   
+                        <li>Os códigos CSS são definidos no cabeçalho, <b>dentro da tag head</b></li>
+                        <li>Afetam somente o documento em que foi definido</li>
+                </ul>
+                <h4>EXTERNO</h4>
+                    <ul>   
+                        <li>Os códigos CSS são definidos <b>em um arquivo externo</b></li>
+                        <li>Afetam todos os documentos que estão linkados ao CSS</li>
+                </ul>
+    </main>
+
+    <footer>
+        <div class="rodape">
+          <p>© Todos os direitos reservados</p>
+        </div>
+    </footer>
 </body>
 </html>

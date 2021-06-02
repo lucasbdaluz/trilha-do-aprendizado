@@ -4,62 +4,197 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="img/favicon.ico" type="image/x-icon">
-    <title>Desenvolvimento WEB</title>
+    <link rel="stylesheet" href="css/index.css">
+    <title>Na Trilha do Aprendizado</title>
 
-    <link rel="stylesheet" href="css/RDE13_estilo.css">
+    <style>
+      body {
+        font-family: Arial, Helvetica, sans-serif;
+        margin-top: 60px;
+        margin-right: 20px;
+        margin-bottom: 20px;
+        margin-left: 70px;
+        border-style: solid;
+        border-width: 2px;
+        border-color: gray;
+        padding-top: 20px;
+        padding-right: 20px;
+        padding-bottom: 20px;
+        padding-left: 20px;
+    }
+
+    h1 {
+        display: inline;
+        background-color: darkblue;
+        width: 200px;
+        height: 50px;
+        margin-top: 50px;
+        margin-right: 50px;
+        margin-bottom: 30px;
+        margin-left: 30px;
+        border: 2px solid darkgray;
+        padding: 10px 10px 10px 10px;
+    }
+
+    p {
+        background-color: aliceblue;
+    }
+
+    span {
+        display: block;
+        background-color: forestgreen;
+    }
+
+    .box1 {
+        position: static;
+        background-color: yellow;
+        width: 400px;
+        height: 50px;
+        top: 0px;
+        left: 0px;
+    }
+
+    .box2 {
+        position: relative;
+        background-color: green;
+        width: 400px;
+        height: 50px;
+        bottom: 50px;
+        left: 450px;
+    }
+
+    .box3 {
+        position: absolute;
+        background-color: blue;
+        width: 400px;
+        height: 50px;
+        top: 500px;
+        left: 500px;
+    }
+
+    .box4 {
+        position: fixed;
+        background-color: orange;
+        width: 400px;
+        height: 50px;
+        top: 0px;
+        right: 0px;
+    }
+
+    .box5{
+        position: sticky;
+        background-color: brown;
+        width: 400px;
+        height: 50px;
+        bottom: 200px;
+        left: 150px;
+    }
+
+    .layer1 {
+        position: relative;
+        background-color: darkcyan;
+        width: 70px;
+        height: 70px;
+        bottom: 0px;
+        left: 25px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        z-index: 1;
+    }
+
+    .layer2 {
+        position: relative;
+        background-color: cadetblue;
+        width: 70px;
+        height: 70px;
+        bottom: 20px;
+        left: 50px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        z-index: 2;
+    }
+
+    .float {
+        background-color: crimson;
+        float: left;
+        margin: 0px 10px 0px 0px;
+    }
+    </style>
 
 </head>
-<body>
- 
-  <h1>Box Model</h1>
- 
-  <p>O modelo das caixas em CSS, descreve os boxes geradas pelos elementos HTML  detalhando as opções de ajuste de margens, bordas, padding e conteúdo para cada elemento.
-  Entender o Box Model é fundamental para construção de layout em sites.</p>
+  <body>
+    <header>
+      <div class="logo">
+          <picture>
+              <img src="img/logo.png"  alt="logo">
+          </picture>
+      </div>
+      <nav>
+          <div class="navegacao"> 
+                  <a href="index.html">Voltar</a>
+                  <a href="projeto.html">Projeto</a>
+                  <a href="sobre.html">Sobre mim</a>
+          </div>
+      </nav>
+    </header>
+    <main >
   
-    <h2>Block Level</h2>
-    <p>Exemplos de elementos block-level</p>
-    <ul>
-        <li>div</li>
-        <li>h1-h6</li>
-        <li>p</li>
-        <li>ul</li> 
-        <li>ol</li>
-        <li>table</li>
-        <li>form</li>
-        <li>fildset</li>
-        <li>hr</li>
-    </ul>
-    <h2>Inline Level</h2>
-    <p>Exemplos de elementos inline-level</p>
-     <ul>
-        <li>span</li>
-        <li><span>a</span></li>
-        <li>img</li>
-        <li>td</li>
-        <li>label</li>
-        <li>input</li>
-        <li>select</li>
-        <li>textarea</li>
-     </ul>
-     <h2> Inline-block</h2>
-     <p>A CSS pode alterar o tipo do elemento, com a propriedade display, com os valores: block, inline</p>
+      <h1>Box Model</h1>
     
-     <h2>Posicionamento</h2>
-     <div class="box1">Estático - permanece na posição em que foi definido</div>
-     <div class="box2">Relativo - posicionado em relação onde foi definido </div>
-     <div class="box3">Absoluto - pode ser posicionado em qualquer lugar do documento</div>
-     <div class="box4">Fixed - permanece fixo durante a rolagem do conteúdo </div>
-     <div class="box5">Sticky - permanece fixo durante a rolagem a partir de onde foi definido </div>
-     <h2>Layers</h2>
-     <div class="layer1">Camada 1 </div>
-     <div class="layer2">Camada 2 </div>
-     <h2>Float</h2>
-     <div>Esta propriedade CSS define se um elemento deve flutuar para left (esquerda), right(direita) ou none (nenhum). 
-                        Ele posiciona um elemento permitindo que outros elementos possam se organizar em torno dele.
-                        <p class="float">Exemplo de Float</p>
-                        Observação: um elemento com um posicionamento absolute ignora totalmente a propriedade float.
-     </div>
-    
-
-</body>
+      <p>O modelo das caixas em CSS, descreve os boxes geradas pelos elementos HTML  detalhando as opções de ajuste de margens, bordas, padding e conteúdo para cada elemento.
+      Entender o Box Model é fundamental para construção de layout em sites.</p>
+      
+        <h2>Block Level</h2>
+        <p>Exemplos de elementos block-level</p>
+        <ul>
+            <li>div</li>
+            <li>h1-h6</li>
+            <li>p</li>
+            <li>ul</li> 
+            <li>ol</li>
+            <li>table</li>
+            <li>form</li>
+            <li>fildset</li>
+            <li>hr</li>
+        </ul>
+        <h2>Inline Level</h2>
+        <p>Exemplos de elementos inline-level</p>
+        <ul>
+            <li>span</li>
+            <li><span>a</span></li>
+            <li>img</li>
+            <li>td</li>
+            <li>label</li>
+            <li>input</li>
+            <li>select</li>
+            <li>textarea</li>
+        </ul>
+        <h2> Inline-block</h2>
+        <p>A CSS pode alterar o tipo do elemento, com a propriedade display, com os valores: block, inline</p>
+        
+        <h2>Posicionamento</h2>
+        <div class="box1">Estático - permanece na posição em que foi definido</div>
+        <div class="box2">Relativo - posicionado em relação onde foi definido </div>
+        <div class="box3">Absoluto - pode ser posicionado em qualquer lugar do documento</div>
+        <div class="box4">Fixed - permanece fixo durante a rolagem do conteúdo </div>
+        <div class="box5">Sticky - permanece fixo durante a rolagem a partir de onde foi definido </div>
+        <h2>Layers</h2>
+        <div class="layer1">Camada 1 </div>
+        <div class="layer2">Camada 2 </div>
+        <h2>Float</h2>
+        <div>Esta propriedade CSS define se um elemento deve flutuar para left (esquerda), right(direita) ou none (nenhum). 
+                            Ele posiciona um elemento permitindo que outros elementos possam se organizar em torno dele.
+                            <p class="float">Exemplo de Float</p>
+                            Observação: um elemento com um posicionamento absolute ignora totalmente a propriedade float.
+        </div>
+    </main>
+    <footer>
+      <div class="rodape">
+        <p>© Todos os direitos reservados</p>
+      </div>
+    </footer>
+      
+  </body>
 </html>

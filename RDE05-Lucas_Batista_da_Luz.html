@@ -4,7 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="img/favicon.ico" type="image/x-icon">
-    <title>Desenvolvimento WEB</title>
+    <link rel="stylesheet" href="css/index.css">
+    <title>Na Trilha do Aprendizado</title>
 
     <style type="text/css">
         h1 {
@@ -17,45 +18,66 @@
 
 </head>
 <body>
-
-    <h1>Hyperlink ou link</h1>
-        <p>É uma referência dentro de um documento em hipertexto para outras partes do mesmo documento, outros documentos, arquivos ou endereço eletrônico</p>
-        <p>Os links podem ser remotos, internos, locais, com endereço de correio ou arquivos</p>
-    
-        <h2>Marcação de Hiperlinks</h2>
-            <p>A marcação de <b>hiperlinks</b> acontece utilizando a <b>tag &lt; a &gt;</b> e a propriedade <b>href</b> que faz a referência para ao conteúdo desejado.</p>
-            <p><b>Sintaxe</b></p>
-            <p>&lt; a href="endereço"&gt; Conteúdo Referenciado Clicável &lt; /a &gt;</p>
-
-        <h2>Hiperlinks externos ou remotos</h2>
-            <p>São <b>links</b> que referenciam sites ou páginas da web. Na propriedade <b>href</b> utilizamos a <b>URL(Uniform Resource Locator)</b> para a referência que desejamos</p>
-            <p><b>Sintaxe</b></p>
-            <p>&lt; a href="URL"&gt; Conteúdo Referenciado &lt; /a &gt;</p>
-
-        <h2>Hiperlinks internos</h2>
-            <p>São links <b>que apontam</b> a um lugar diferente <b>dentro da mesma página</b> e possibilita acessar diferentes <b>parágrafos ou seções</b> quando o documento é extenso</p>
-            <p><b>Sintaxe</b></p>
-            <p>&lt; a href="#referencia"&gt; Conteúdo Referenciado &lt; /a &gt;</p>
-            <p>&lt; a name="referencia"&gt; &lt; /a &gt;</p>
+    <header>
+        <div class="logo">
+            <picture>
+                <img src="img/logo.png"  alt="logo">
+            </picture>
+         </div>
+         <nav>
+             <div class="navegacao"> 
+                    <a href="index.html">Voltar</a>
+                    <a href="projeto.html">Projeto</a>
+                    <a href="sobre.html">Sobre mim</a>
+             </div>
+         </nav>
+    </header>
+    <main >
+        <h1>Hyperlink ou link</h1>
+            <p>É uma referência dentro de um documento em hipertexto para outras partes do mesmo documento, outros documentos, arquivos ou endereço eletrônico</p>
+            <p>Os links podem ser remotos, internos, locais, com endereço de correio ou arquivos</p>
         
-        <h2>Hiperlinks locais</h2>
-            <p>São links <b>que apontam</b> para outras páginas dentro de um <b>mesmo site</b></p>
-            <p><b>Sintaxe</b></p>
-            <p>&lt; a href="arquivo.html"&gt; Conteúdo Referenciado &lt; /a &gt;</p>
+            <h2>Marcação de Hiperlinks</h2>
+                <p>A marcação de <b>hiperlinks</b> acontece utilizando a <b>tag &lt; a &gt;</b> e a propriedade <b>href</b> que faz a referência para ao conteúdo desejado.</p>
+                <p><b>Sintaxe</b></p>
+                <p>&lt; a href="endereço"&gt; Conteúdo Referenciado Clicável &lt; /a &gt;</p>
 
-        <h2>Hiperlinks em imagens</h2>
-            <p>É possível realizar hiperlinks imagens envolvendo a <b>tag de imagem com a tag de hiperlink</b></p>
-            <p><b>Sintaxe</b></p>
-            <p>&lt; a href="referencia"&gt; &lt; img src="imagem.jpg"&gt; &lt; /a &gt;</p>
+            <h2>Hiperlinks externos ou remotos</h2>
+                <p>São <b>links</b> que referenciam sites ou páginas da web. Na propriedade <b>href</b> utilizamos a <b>URL(Uniform Resource Locator)</b> para a referência que desejamos</p>
+                <p><b>Sintaxe</b></p>
+                <p>&lt; a href="URL"&gt; Conteúdo Referenciado &lt; /a &gt;</p>
 
-        <h2>Hiperlinks para downloads de arquivos</h2>
-            <p>São links <b>que apontam</b> para arquivos e possibilitam realizar <b>download</b> deste arquivo</p>
-            <p><b>Sintaxe</b></p>
-            <p>&lt; a href="arquivo.extensão" download="arquivo.extensao" type="tipo"&gt;Conteudo &lt; /a &gt;</p>
+            <h2>Hiperlinks internos</h2>
+                <p>São links <b>que apontam</b> a um lugar diferente <b>dentro da mesma página</b> e possibilita acessar diferentes <b>parágrafos ou seções</b> quando o documento é extenso</p>
+                <p><b>Sintaxe</b></p>
+                <p>&lt; a href="#referencia"&gt; Conteúdo Referenciado &lt; /a &gt;</p>
+                <p>&lt; a name="referencia"&gt; &lt; /a &gt;</p>
+            
+            <h2>Hiperlinks locais</h2>
+                <p>São links <b>que apontam</b> para outras páginas dentro de um <b>mesmo site</b></p>
+                <p><b>Sintaxe</b></p>
+                <p>&lt; a href="arquivo.html"&gt; Conteúdo Referenciado &lt; /a &gt;</p>
 
-        <h2>Hiperlinks para endereço eletrônico</h2>
-            <p>São links <b>que apontam</b> para um endereço eletrônico</p>
-            <p><b>Sintaxe</b></p>
-            <p>&lt; a href="mailto:email@email.com"&gt;email@email.com &lt; /a &gt;</p>
+            <h2>Hiperlinks em imagens</h2>
+                <p>É possível realizar hiperlinks imagens envolvendo a <b>tag de imagem com a tag de hiperlink</b></p>
+                <p><b>Sintaxe</b></p>
+                <p>&lt; a href="referencia"&gt; &lt; img src="imagem.jpg"&gt; &lt; /a &gt;</p>
+
+            <h2>Hiperlinks para downloads de arquivos</h2>
+                <p>São links <b>que apontam</b> para arquivos e possibilitam realizar <b>download</b> deste arquivo</p>
+                <p><b>Sintaxe</b></p>
+                <p>&lt; a href="arquivo.extensão" download="arquivo.extensao" type="tipo"&gt;Conteudo &lt; /a &gt;</p>
+
+            <h2>Hiperlinks para endereço eletrônico</h2>
+                <p>São links <b>que apontam</b> para um endereço eletrônico</p>
+                <p><b>Sintaxe</b></p>
+                <p>&lt; a href="mailto:email@email.com"&gt;email@email.com &lt; /a &gt;</p>
+    </main>
+
+    <footer>
+        <div class="rodape">
+          <p>© Todos os direitos reservados</p>
+        </div>
+    </footer> 
 </body>
 </html>
