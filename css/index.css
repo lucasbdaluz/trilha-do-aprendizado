@@ -101,6 +101,12 @@ nav {
     padding: 10px;
 }
 
+.bloco-curriculo {
+    width: 65%;
+    margin: 0 auto;
+    text-align: center;
+}
+
 .rodape {
     color: darkgray;
     font-size: 10px;
